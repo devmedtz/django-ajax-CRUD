@@ -4,6 +4,7 @@ from django.conf.urls.static import static
 from django.urls import path, include
 
 urlpatterns = [
+    path('books/', include('books.urls', namespace='books')),
     path('admin/', admin.site.urls),
 ]
 
